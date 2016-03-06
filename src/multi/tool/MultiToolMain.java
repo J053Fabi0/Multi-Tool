@@ -32,8 +32,10 @@ public class MultiToolMain extends JPanel implements ActionListener{
         Panel panel = new Panel();
         
         tiempoPanel = panel.getTimePanel();
+        mp3 mp3 = new mp3();
+        mp3.setPlayClick();
         horas = tiempoPanel[0];
-        minutos = tiempoPanel[1]; 
+        minutos = tiempoPanel[1];
         Pruebas22.Window();
         
     }
