@@ -31,7 +31,7 @@ public class Timer extends JLabel implements ActionListener{
     javax.swing.Timer clock = new javax.swing.Timer(1000, this);
     
     public void Main() throws IOException{
-        Timer timer = new Timer();
+        Timer timer = new Timer(); 
         Panel panel = new Panel();
         int[] array = panel.getTimePanel();
         horas = array[0];

@@ -33,7 +33,7 @@ public class MultiToolMain extends JPanel implements ActionListener{
         
         tiempoPanel = panel.getTimePanel();
         horas = tiempoPanel[0];
-        minutos = tiempoPanel[1];
+        minutos = tiempoPanel[1]; 
         Pruebas22.Window();
         
     }
