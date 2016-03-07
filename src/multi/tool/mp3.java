@@ -22,7 +22,7 @@ public class mp3 {
                         FileInputStream fis;
                         Player player;
                         fis = new FileInputStream(
-                                "/Users/JoseFabioAL/NetBeansProjects/canciones/click.mp3");
+                                "../Multi Tool/click.mp3");
                         BufferedInputStream bis = new BufferedInputStream(fis);
 
                         player = new Player(bis); // Llamada a constructor de la clase Player
@@ -35,16 +35,16 @@ public class mp3 {
                        }
     }
     
-    public void setPlay(String nameMusic){
+    public void setPlayAlarm(){
                          try {
 
                         FileInputStream fis;
                         Player player;
                         fis = new FileInputStream(
-                                "/Users/JoseFabioAL/NetBeansProjects/canciones/"+nameMusic);
+                                "../Multi Tool/alarm.mp3");
                         BufferedInputStream bis = new BufferedInputStream(fis);
 
-                        player = new Player(bis); // Llamada a constructor de la clase Player
+                        player = new Player(bis); // Llamada a constructor de la clase Player y bis es BufferedInputStream el cual tiene fis que es FileInputStream
                         player.play();          // Llamada al método play
                       }
                        catch (JavaLayerException e) {
